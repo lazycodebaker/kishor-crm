@@ -4,9 +4,12 @@ import { BLUE } from "../constant"
 import SEARCH_ICON from '../assets/navbar/search.png'
 import NOTIFICATION_BELL_ICON from '../assets/navbar/notification_bell.png'
 import AVATAR_ICON from '../assets/navbar/user_avatar.png'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Navbar : React.FC = () => {
+
+    const navigate = useNavigate()
+
     return (
         <nav style={{
             backgroundColor : BLUE
@@ -28,7 +31,9 @@ const Navbar : React.FC = () => {
                 <div className="flex items-center justify-end w-full space-x-4">
                     <img src={NOTIFICATION_BELL_ICON} alt="notification bell icon" className="w-8" />
 
-                    <div className="rounded-full w-10 h-10 flex items-center justify-center">
+                    <div onClick={()=>{
+                        navigate("/auth/login")
+                    }} className="rounded-full w-10 h-10 flex items-center justify-center">
                         <img src={AVATAR_ICON} alt="avatar icon" className="w-full h-full rounded-full" />
                     </div>
                 </div>
