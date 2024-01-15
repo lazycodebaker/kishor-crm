@@ -199,9 +199,9 @@ const Token = () => {
         <>
             <Navbar />
             <main className="w-full h-screen bg-gray-100">
-                {token === "telegram" && <Telegram />}
-                {token === "easebuzz" && <Easebuzz />}
-                {token === "cc-avenue" && <CC_Avenue />}
+                {token === "telegram-api" && <Telegram />}
+                {token === "easebuzz-api" && <Easebuzz />}
+                {token === "cc-avenue-api" && <CC_Avenue />}
                 {token === "paytm-gateway" && <Paytm_Gateway />}
                 {token === "keka" && <Keka />}
                 {token === "wati-api" && <Wati_Api />}

@@ -194,42 +194,42 @@ export const Links = {
                 small: true
             },
             "Telegram API": {
-                url: "/settings/telegram-api",
+                url: "/token/telegram-api",
                 icon: DOT_ICON,
                 small: true
             },
             "Easebuzz API": {
-                url: "/settings/easebuzz-api",
+                url: "/token/easebuzz-api",
                 icon: DOT_ICON,
                 small: true
             },
             "CC Avenue API": {
-                url: "/settings/cc-avenue-api",
+                url: "/token/cc-avenue-api",
                 icon: DOT_ICON,
                 small: true
             },
             "Paytm Gateway": {
-                url: "/settings/paytm-gateway",
+                url: "/token/paytm-gateway",
                 icon: DOT_ICON,
                 small: true
             },
             Keka: {
-                url: "/settings/keka",
+                url: "/token/keka",
                 icon: DOT_ICON,
                 small: true
             },
             "Wati API": {
-                url: "/settings/wati-api",
+                url: "/token/wati-api",
                 icon: DOT_ICON,
                 small: true
             },
             "Interakt API": {
-                url: "/settings/interakt-api",
+                url: "/token/interakt-api",
                 icon: DOT_ICON,
                 small: true
             },
             "KIT 19": {
-                url: "/settings/kit-19",
+                url: "/token/kit-19",
                 icon: DOT_ICON,
                 small: true
             },
