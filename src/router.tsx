@@ -1,5 +1,5 @@
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom'
 import App from './App'
 import EmailTemplate from './pages/Settings/EmailTemplate/EmailTemplate'
 import Token from './pages/Token'
@@ -54,7 +54,17 @@ const router = createBrowserRouter([
 const Router: React.FC = () => {
     return (
         <>
-            <RouterProvider router={router} />
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path="settings/email-template" element={<EmailTemplate />} />
+                <Route path="settings/automation/logs" element={<Automation />} />
+                <Route path="token/:token" element={<Token />} />
+                <Route path="/auth/login" element={<SignIn />} />
+                <Route path="/auth/register" element={<Register />} />
+                <Route path="/validate/admission" element={<ValidateAdmission />} />
+                <Route path="*" element={<ErrorPage />} />
+                <Route path="automation/it-report" element={<ITReport />} />
+            </Routes>
         </>
 
     )
